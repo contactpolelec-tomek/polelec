@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="pl">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Faktura — POLELEC</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;color:#111;margin:0;padding:20px}
+.sheet{max-width:800px;margin:0 auto;padding:20px;border:1px solid #ddd}
+header{display:flex;justify-content:space-between;align-items:center}
+header img{height:60px}
+h1{margin:0}
+.meta{margin-top:20px;display:flex;justify-content:space-between}
+table{width:100%;border-collapse:collapse;margin-top:20px}
+table th, table td{border:1px solid #ddd;padding:8px;text-align:left}
+.totals{margin-top:10px;display:flex;justify-content:flex-end}
+.totals table{width:300px}
+.small{font-size:12px;color:#555}
+</style></head>
+<body>
+  <div class="sheet">
+    <header>
+      <div>
+        <img src="assets/images/logo.png" alt="Logo POLELEC">
+        <p class="small">POLELEC<br>1 rue de Chateaudun<br>92100 Boulogne-Billancourt<br>contact.polelec@gmail.com</p>
+      </div>
+      <div>
+        <h1>Faktura / Facture</h1>
+        <p>Nr: <strong>2025-001</strong><br>Data: 2025-10-01</p>
+      </div>
+    </header>
+
+    <section class="meta">
+      <div>
+        <strong>Odbiorca / Client:</strong>
+        <p>Imię Nazwisko / Firma<br>Adres klienta</p>
+      </div>
+      <div>
+        <strong>Warunki płatności:</strong>
+        <p>Przelew 14 dni / Virement sous 14 jours</p>
+      </div>
+    </section>
+
+    <table>
+      <thead>
+        <tr><th>Usługa / Service</th><th>Ilość</th><th>Cena jednostkowa</th><th>Wartość</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Usługa elektryczna — instalacja</td><td>1</td><td>€1,200.00</td><td>€1,200.00</td></tr>
+        <tr><td>Materiały</td><td>1</td><td>€150.00</td><td>€150.00</td></tr>
+      </tbody>
+    </table>
+
+    <div class="totals">
+      <table>
+        <tr><td>Netto / HT</td><td>€1,350.00</td></tr>
+        <tr><td>TVA (20%)</td><td>€270.00</td></tr>
+        <tr><th>Do zapłaty / Total</th><th>€1,620.00</th></tr>
+      </table>
+    </div>
+
+    <p class="small">Uwagi: Dziękujemy za współpracę. / Remarque: Merci pour votre confiance.</p>
+  </div>
+</body>
+</html>
